@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '52 2,8,14,20 * * *'
+    - cron: '0 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,17 +11,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: zhengsonglianghe
         env:
-          jnneg1: ${{ secrets.jnneg1 }}
+          as88587: ${{ secrets.as88587 }}
         run: |
-          printf '%s' "$jnneg1" | jq -r .rhk256 | /bin/bash
-          echo $x490 | jq -r .mj917 | /bin/bash
-          printf '%s' "$fncii88370" | jq -r .zq075 | /bin/bash
-          printf '%s' "$tc9" | jq -r .mkclb9 | /bin/bash
-          echo $hwhb06747 | jq -r .p272 | /bin/bash
+          printf '%s' "$as88587" | jq -r .s4 | /bin/bash
+          echo $mjew00233 | jq -r .ddda9832 | /bin/bash
+          echo $ffswh0 | jq -r .mqvy3 | /bin/bash
+          printf '%s' "$jybj39" | jq -r .riaa7789 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: nBqTigcQ
+          name: 6T1RsBjD
           path: "*.zip"
           retention-days: 1
